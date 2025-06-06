@@ -4,6 +4,41 @@
   font-weight: 500 700;
 }
 
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-200: hsl(210, 46%, 95%);
+  --color-grey-400: hsl(212, 23%, 69%);
+  --color-grey-500: hsl(214, 17%, 51%);
+  --color-grey-900: hsl(217, 19%, 35%);
+
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+  font-weight: 500;
+  background-color: var(--color-grey-200);
+}
+
+h1 {
+ font-size: 1.25rem;
+ line-height: 130%;
+ letter-spacing: 0.25px;
+ font-weight: 700;
+}
+
+p {
+  font-size: 0.8125rem;
+}
+
+main {
+  background-color: var(--color-white);
+  max-width: 375px;
+  display: grid;
+  gap: 2rem;
+}
+
 
 
 
