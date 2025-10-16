@@ -16,7 +16,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   line-height: 140%;
-  letter-spacing: 0.12%;
+  letter-spacing: .12px;
   font-weight: 500;
   background-color: var(--color-grey-200);
   align-content: center;
@@ -79,6 +79,7 @@ main {
   gap: 1rem;
   grid-template-columns: auto auto;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer {
@@ -107,9 +108,10 @@ main {
   border-radius: 50%;
   
   > .icon {
-    width: 15px;
-    height: 13px;
+      position: relative;
+      top: -1px;
   }
+
 }
 
 .share_popup {
@@ -119,30 +121,33 @@ main {
   border-radius: 0 0 10px 10px;  
   display: flex;
   justify-content: space-between;
-  padding: 1.375rem 1.875rem ;
+  padding-block: 1.375rem;
 }
 
-.share__socials {
+.share__content {
   display: flex;
-  
+  gap: 1.5rem;
 
   > p {
-    font-size: 0.8125rem;
-    /* 
+    line-height: 140%;
+    letter-spacing: 3.25px;
     color: var(--color-grey-400);
+    /* 
     font-weight: 700;
     padding: 1rem; */
   }
 
-  > .icon {
-    /* color: white;
-    width: 15px;
-    height: 13px;
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 50%; */
-  }
 }
+
+.share__socials {
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.share_popup .share_icon {
+    background-color: var(--color-grey-500);
+  }
 
 
 
