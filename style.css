@@ -121,7 +121,7 @@ main {
   border-radius: 0 0 10px 10px;  
   display: flex;
   justify-content: space-between;
-  padding-block: 1.375rem;
+  padding: 1.375rem 1.875rem;
 }
 
 .share__content {
