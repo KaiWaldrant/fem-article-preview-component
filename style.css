@@ -117,25 +117,30 @@ main {
   background-color: var(--color-grey-900);
   width: 100%;
   border-radius: 0 0 10px 10px;  
+  display: flex;
+  justify-content: space-between;
+  padding: 1.375rem 1.875rem ;
 }
 
 .share__socials {
-  display: grid;
+  display: flex;
+  
 
   > p {
     font-size: 0.8125rem;
+    /* 
     color: var(--color-grey-400);
     font-weight: 700;
-    padding: 1rem;
+    padding: 1rem; */
   }
 
   > .icon {
-    color: white;
+    /* color: white;
     width: 15px;
     height: 13px;
-    /* padding: 1rem; */
+    padding: 1rem;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 50%; */
   }
 }
 
