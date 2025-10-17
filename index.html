@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <script src="hideElement.js" defer></script>
   
   <title>Frontend Mentor | Article preview component</title>
 
@@ -26,7 +27,7 @@
   to help you make any room feel complete.</p>
         
       </section>
-      <section class="main__footer">
+      <section id="footer" class="main__footer">
         <div class="footer__content">
           <div class="footer">
             <img class="avatar" src="/assets/images/avatar-michelle.jpg" alt="">
@@ -35,7 +36,7 @@
               <p>28 Jun 2020</p>
             </div>
           </div>
-          <a class="share_icon" href="#">
+          <a id="shareShowButton" class="share_icon" href="#">
             <img class="icon" src="/assets/images/icon-share.svg" alt="share-icon">
           </a>
         </div>
@@ -44,7 +45,7 @@
          
       </section>
     </div>
-    <div class="footer share_popup">
+    <div id="popup" class="footer share_popup">
           <div class="share__content">
             <p>SHARE</p>
             <div class="share__socials">
@@ -53,7 +54,7 @@
               <img src="/assets/images/icon-pinterest.svg" alt="pinterest" class="icon">
             </div>
           </div>
-          <a class="share_icon" href="#">
+          <a id="shareHideButton" class="share_icon" href="#">
             <img  class="icon" src="/assets/images/icon-share-white.svg" alt="share-icon">
           </a>
         </div>
