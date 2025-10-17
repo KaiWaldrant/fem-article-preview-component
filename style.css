@@ -27,11 +27,12 @@ h1 {
   line-height: 130%;
   letter-spacing: 0.25px;
   font-weight: 700;
+  color: var(--color-grey-900);
 }
 
 p {
   font-size: 0.8125rem;
-  color: var(--color-grey-500);
+  color: var(--color-grey-400);
 }
 
 main {
@@ -41,7 +42,7 @@ main {
   gap: 2rem;
   margin: auto;
   border-radius: 10px;
-
+  position: relative;
 }
 
 .hero {
@@ -63,6 +64,7 @@ main {
   gap: 3rem;
   max-width: 267px;
   margin: auto;
+  margin-bottom: 1.125rem;
 }
 
 .main__section {
@@ -115,6 +117,8 @@ main {
 }
 
 .share_popup {
+  position: absolute;
+  bottom: 0;
   display: none;
   background-color: var(--color-grey-900);
   width: 100%;
@@ -147,7 +151,7 @@ main {
 
 .share_popup .share_icon {
     background-color: var(--color-grey-500);
-  }
+}
 
 
 
