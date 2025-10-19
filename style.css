@@ -133,20 +133,21 @@ main {
   gap: 1rem;
   align-items: center;
   background-color: var(--color-grey-900);
-  width: 327px;
   border-radius: 0 0 10px 10px;  
   justify-content: space-between;
   padding: 1.375rem 1.875rem;
+  width: 100%;
+  max-width: 327px;
 }
 
 .share_popup:popover-open {
   display: flex;
-
 }
 
 .share__content {
   display: flex;
   gap: 1.5rem;
+  flex: 1;
 
   > p {
     line-height: 140%;
@@ -205,18 +206,27 @@ main {
     height: 56px;
     width: 248px;
     border-radius: 10px;
-    padding: 1.125rem 2.375rem;
-    position: relative;
+    /* padding: 1.125rem 2.375rem; */
+    
+    margin: 0;
+    margin-block-end: 30px;
+    margin-inline-end: -95px;
+    inset: auto;
+    bottom: anchor(top);
+    right: anchor(right);
+    padding-block: 0;
+    padding-inline: 2.375rem;
+    overflow: visible;
 
     &::before {
       content: "";
       background-color: var(--color-grey-900);
       transform: rotate(45deg);
       position: absolute;
-      bottom: -6px;
-      margin: 0 50%;
-      width: 12px;
-      height: 12px;
+      bottom: -12px;
+      margin: 0 35%;
+      width: 24px;
+      height: 24px;
     }
 
     > .share_icon {
