@@ -187,6 +187,7 @@ main {
     border-radius: 10px 0 0 10px;
 
     > img {
+      object-fit: none;
       object-position: left bottom;   
     }
   }
@@ -200,6 +201,10 @@ main {
 
   .main__section {
     gap: 1.5rem;
+  }
+
+  .share_icon {
+    margin-right: 3px;
   }
 
   .share_popup {
@@ -232,6 +237,25 @@ main {
     > .share_icon {
       display: none;
     }
+  }
+
+}
+
+@media (min-width: 1440px) {
+  main {
+    max-width: 730px;
+    max-height: 280px;
+    gap: 2.5rem;
+  }
+
+  .hero {
+    max-height: 280px;
+    min-width: 285px;
+  }
+
+  .main_text {
+    min-width: 365px;
+    margin-inline-end: 2.5rem;
   }
 
 }
