@@ -129,7 +129,7 @@ main {
   top: anchor(top);
   right: anchor(right);
   margin-inline-end: -30px;
-  margin-block-start: -30px;
+  margin-block-start: -23px;
   gap: 1rem;
   align-items: center;
   background-color: var(--color-grey-900);
